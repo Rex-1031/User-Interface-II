@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/*
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,9 +24,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-*/
-/*
-}
+
+
 body {
 	line-height: 1;
 }
@@ -45,7 +44,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*/
+
 
 body{
    font-family: 'Merriweather Sans', sans-serif;
@@ -73,6 +72,7 @@ justify-content: space-between;
     color: #66fcf1;
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
+    padding: 20px 20px;
      
 }
 
@@ -80,7 +80,7 @@ button{
     background-color: #0b0c10;
     border: 0;
     color: #45a29e;
-    padding: 15px 32px;
+    padding: 0.9375rem 2rem;
     text-align: center;
     text-decoration: none;
 }
@@ -102,11 +102,11 @@ width: 100%;
     -ms-transform: translate(-50%, -50%);
     background-color: #0b0c10;
     color: #45a29e;
-    font-size: 16px;
-    padding: 16px 30px;
-    border: 1px solid #66fcf1;
+    font-size: 1rem;
+    padding: 1rem 1.875rem;
+    border: 0.0625rem solid #66fcf1;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     text-align: center; 
 }
 
@@ -126,17 +126,29 @@ footer{
     align-content:center ;
     align-items: center;
 }
+
 .footbutton{
-    border: 1px solid #66fcf1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0b0c10;
+    color: #45a29e;
+    font-size: 1rem;
+    padding: 1rem 1.875rem;
+    border: 0.0625rem solid #66fcf1;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    text-align: center; 
 }
 
 .bodyp{
     background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
 }
 .projimg img{
-    height: 400px;
-    width: 400px;
-    margin: 20px;
+    height: 25rem;
+    width: 25rem;
+    margin: 1.25rem;
 }
 .projimg{
    display: flex;
@@ -153,9 +165,123 @@ justify-content: space-between;
 }
 .divab p{
     width: 75%;
+    padding: 40px;
 }
 .divab img{
-    width: 400px;
-    height:400px;
+    width: 25rem;
+    height:25rem;
     border-radius: 50%;
+    padding: 40px 0;
+}
+.divct{
+    color: #66fcf1;
+    font-size: 2rem;
+   display: flex;
+   justify-content: space-between;
+   }
+   .divct p{
+       width: 100%;
+       padding: 40px;
+       text-align: center;
+       font-size: 2rem;
+   }
+   .form{
+       display: block;
+       text-align: center;
+   }
+
+@media (max-width:800px){
+    body{
+     padding: 1.875rem;
+    }
+   
+    .imgd{
+      height: 43.75rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center; 
+    }
+    .imgd img{
+      height: 35%;
+      width: 20%;
+      padding: 0.625rem;
+    }
+    .projimg{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .divab{
+        height: auto;
+        width: auto;
+    }
+    .divab p{
+        width: auto;
+        font-size: 1rem;
+        padding: 30px 0
+    }
+    .divab img{
+        display: none;
+    }
+    .divct{
+        height: auto;
+        width: auto;
+    }
+    .divct p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .form{
+       display: flex;
+       justify-content: center;
+    }
+    }
+
+    @media(max-width:500px){
+    
+    .div1{
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav1{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .imgd{
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .imgd img{
+      width: 30%;
+      height: 30%; 
+    }
+    .projimg{
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center; 
+    }
+    .projimg img{
+     width: 30%;
+     height: 30%; 
+    }
+    .divct{
+        height: auto;
+        width: auto;
+    }
+
+    .divct p{
+        font-size: 1rem;
+       padding: 1.5rem 8rem;
+  }
 }
