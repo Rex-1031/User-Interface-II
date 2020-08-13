@@ -1,1 +1,4 @@
 /* Add CSS styling here */
+body{
+    background-image: linear-gradient(to left bottom, #cfdbd5, #b0b9b3, #919893, #737974, #575b57, #494d49, #3c3f3c, #2f312f, #2c2e2c, #2a2a29, #272726, #242423);
+}
